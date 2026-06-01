@@ -47,6 +47,7 @@ jobs:
       - name: Copy CV assets to website
         run: |
           mkdir -p website/public/assets/pdf
+          mkdir -p website/src/data/
           cp main.pdf website/public/assets/pdf/Everest_KC_CV.pdf
 
           cp cv-fragment.html website/src/data/cv-content.html
