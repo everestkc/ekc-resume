@@ -1,0 +1,168 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.3 in,top=0.3in,right=0.3 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Everest K C} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+1-208-957-4340 \\ \href{mailto:everestkc@everestkc.com.np}{everestkc@everestkc.com.np} \\ Redmond, WA} 
+\address{ \href{https://everestkc.org}{everestkc.org} \\
+\href{https://linkedin.com/in/babueverest}{linkedin.com/in/babueverest} \\
+\href{https://github.com/everestkc}{github.com/everestkc} \\
+\href{https://credly.com/users/everest-k-c/badges}{credly.com/users/everest-k-c}
+} %
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+\vspace{-7pt}
+\begin{rSection}{SUMMARY}
+% {Software Engineer with 6+ years of experience in backend development, infrastructure automation, and site reliability engineering, seeking full-time Software Engineering roles. Skilled in designing backend services, automating CI/CD pipelines, and deploying cloud-native infrastructure using Python, Go, Bash, Linux, Docker, Kubernetes, Terraform, and Ansible.}
+% {Software Engineer with 6+ years of experience building backend services, automations, CI/CD platforms, Linux-based systems, Kubernetes deployment workflows, and production observability. M.S. Computer Science graduate with a 4.0 GPA. Proven impact includes 90\% faster CI builds, 45\% faster offline upgrades, 30\% faster infrastructure deployment, and 25\% faster incident response through automation, testing, and monitoring.}
+{Senior Software / Site Reliability Engineer with 6+ years building production-grade backend services, Linux-based systems, Kubernetes infrastructure, and CI/CD platforms. Delivered a 90\% CI build-time reduction, 75\% lower manual QA effort, 30\% faster infrastructure deployment, and 25\% faster incident response. Deep expertise in Python, Go, AWS, Kubernetes, distributed systems, and SLO-driven observability; equally effective as an SWE, SRE, or Production Engineer.}
+
+% {Software Engineer and infrastructure-focused SRE with 6+ years of experience in backend development, infrastructure automation, and site reliability engineering, seeking full-time Software Engineering, DevOps, or SRE roles. Skilled in designing backend services, automating CI/CD pipelines, and deploying cloud-native infrastructure using Python, Go, Bash, Linux, Kubernetes, Docker, Terraform, and Ansible.}
+
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Languages & Python, Go, C/C++, Java, Bash, SQL\\
+% Technologies \& Tools & AWS (EC2, ECS, Lambda, S3, RDS, SQS, Boto3), Docker, Kubernetes, Terraform, Ansible,\\
+% & Packer, Kafka, Apache Flink, gRPC, REST APIs, event-driven architecture, Prometheus,\\& Grafana, SLOs, Jenkins, GitHub Actions, PostgreSQL, MySQL, MongoDB,\\& Linux System Administration, ISO remastering
+
+Languages & Python, Go, C/C++, Java, Bash, SQL\\
+Cloud \& Infra & AWS, Azure, Docker, Kubernetes, Infrastructure as a Code, Terraform, Ansible, Packer\\
+CI \& CD &  Git, Jenkins, GitHub Actions, Make, Gradle, ArgoCD, monorepo tooling (git-filter-repo)\\
+Reliability \& Observability & Prometheus, Grafana, SLO/SLIs, alerting, incident response, postmortems\\
+Distributed Systems \& Data & Kafka, Flink, gRPC, REST APIs, PostgreSQL, MySQL, MongoDB\\
+Systems & Linux administration, ISO remastering, debootstrap, Debian Preseed, NixOS, Ubuntu
+
+% Languages &  Python, Go, C/C++, Bash, Java, SQL\\
+% Cloud & AWS (EC2, ECS, Lambda, S3, RDS, SQS, Boto3), Azure\\
+% DevOps/Infra &  Make, Gradle, Docker, Kubernetes, Terraform, Ansible, Packer, Jenkins, GitHub Actions, GitLab CI\\
+% Observability & Prometheus, Grafana\\
+% Databases &  PostgreSQL, MySQL, MongoDB, Cassandra \\
+% Technologies &  REST, gRPC, Kafka, Apache Flink, Airflow, Nginx, VMware ESXi\\
+\end{tabular}
+\end{rSection}
+
+\begin{rSection}{EXPERIENCE}
+\textbf{Graduate Assistant} \hfill Aug 2022 - May 2025\\
+Boise State University \hfill \textit{Boise, ID}
+% \textbf{Graduate Research Assistant}, Boise State University --- Boise, ID \hfill Aug 2022 -- May 2025
+\vspace{-4pt}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item Researched privacy-preserving proximity search for geospatial systems using additive homomorphic encryption, order-preserving encryption, garbled-circuit-based secure comparison, and dummy-query obfuscation to evaluate and reduce hotspot inference risk; manuscript in preparation.
+    \item Built reproducible \textbf{Python}/\textbf{SQL} experiment pipelines with \textbf{pandas}, \textbf{Bokeh}, and \textbf{Jenkins}, automating geospatial workload generation and hotspot inference evaluation, reducing turnaround \textbf{from days to hours} across repeated runs.
+\end{itemize}
+
+\textbf{Senior DevOps Engineer} \hfill Jul 2020 - Jul 2022\\
+guardsix \hfill \textit{Lalitpur, Nepal}
+\vspace{-4pt}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item Reduced CI build time by \textbf{90\%} from 50 min to 5 min by redesigning \textbf{Jenkins} pipelines, containerizing build environments, and authoring a \textbf{Go}-based parallel package download tool for reproducible release builds.
+    \item Reduced PR cycle time by \textbf{35\%} via monorepo consolidation of \textbf{26 repos} using \textbf{git-filter-repo}, eliminating cross-repo dependency drift and simplifying code ownership.
+    \item Provisioned AWS infra with \textbf{Terraform/Ansible/Packer} across 3 environments, cutting deployment time by \textbf{30\%}.
+    \item Defined \textbf{SLOs, SLIs}, alerting thresholds, and on-call runbooks for \textbf{10 production services} using \textbf{Prometheus}/\textbf{Grafana}, reducing \textbf{MTTD} and \textbf{MTTR} by \textbf{25\%}.
+    \item Led \textbf{blameless postmortems} and corrective-action tracking for recurring production incidents, eliminating recurrence of \textbf{3} major failure classes.
+    \item Engineered monolith-to-microservices migration using the \textbf{Strangler Fig Pattern}, decomposing a legacy Python monolith into independently deployable \textbf{Kubernetes} services and reducing deployment frequency from weekly to daily.
+    \item Reduced QA environment setup \textbf{from 2 hrs to 25 min} via \textbf{pyVmomi} automation, unblocking parallel QA lanes.
+\end{itemize}
+
+\textbf{Senior Software Engineer} \hfill Feb 2015 - Aug 2019\\
+guardsix \hfill \textit{Lalitpur, Nepal}
+\vspace{-4pt}
+\begin{itemize}
+    \itemsep -3pt {}
+     \item Built \textbf{Python Flask} backend services using controlled subprocess execution to map Linux administration commands to a secure web-based management UI, standardizing server management.
+    \item Built a \textbf{Django}/\textbf{SQL} customer portal for releases, documentation, and update notes, centralizing delivery for \textbf{500+ enterprise customers}.
+    \item Led the design of a multi-tier (hot/warm/cold) \textbf{S3} and \textbf{Glacier} backup plugin for enterprise customers with \textbf{Boto3}.
+    \item Built \textbf{Robot Framework} regression and upgrade-validation suites covering \textbf{150 test scenarios}, reducing manual QA cycle time by \textbf{75\%} and improving release confidence.
+    \item Architected cumulative patch upgrade system for a custom \textbf{Linux OS} serving \textbf{2500+} air-gapped enterprise deployments and also reduced the upgrade time by \textbf{45\%}.
+    \item Built custom \textbf{Ubuntu}-based Linux ISO through kernel compilation and ISO remastering with \textbf{debootstrap}, \textbf{Bash}, and \textbf{Debian Preseed}, integrating \textbf{ZFS, LVM}, monitoring agents, hardened defaults, and performance tuning.
+    \item Built \textbf{Dockerized Kafka/Flink} edge-to-cloud pipelines ingesting \textbf{3000 events/sec} for a UEBA solution, enabling real-time behavioral anomaly detection at enterprise scale.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Education}
+{\bf Master of Science in Computer Science}, Boise State University \hfill {Aug 2022 - May 2026}\\
+\hspace*{1em} \textit{\textbf{GPA:}} 4.0/4.0 \textbar{} \textit{\textbf{Research:}} \textit{Applied Cryptography, Privacy-Preserving Geospatial Systems}\\
+{\bf Bachelor of Computer Engineering}, Tribhuvan University \hfill {Dec 2010 - Aug 2014}
+\end{rSection}
+
+\newpage
+
+\begin{rSection}{Projects}
+\textbf{AI-Powered Cloud Cost Advisor} \hfill Python, AWS, Bedrock, Cost Explorer, Lambda, S3
+\begin{itemize}
+    \item Built an AI assistant that analyzes AWS Cost Explorer data, identifies cost anomalies, and generates plain-English optimization recommendations for EC2, S3, Lambda, and idle resources.
+    \item Used Amazon Bedrock to summarize cost trends and convert technical findings into business-friendly recommendations for engineering and finance stakeholders.
+\end{itemize}
+
+\textbf{RAG Assistant for Cloud Architecture Documentation} \hfill Python, Bedrock, LangChain, OpenSearch/Qdrant, S3
+\begin{itemize}
+    \item Built a retrieval-augmented generation assistant that answers architecture questions from internal runbooks, postmortems, Terraform modules, and AWS documentation.
+    \item Implemented document ingestion, embeddings, vector search, and response grounding to help engineers quickly find operational and design guidance.
+\end{itemize}
+
+\textbf{Serverless AI Incident Triage Bot} \hfill AWS Lambda, CloudWatch, SNS, Bedrock, Python
+\begin{itemize}
+    \item Built a serverless incident triage workflow that consumes CloudWatch alarms, summarizes likely root causes, and recommends first-response actions using historical runbooks.
+    \item Designed the workflow with event-driven architecture, least-privilege IAM permissions, and human-readable escalation summaries for on-call engineers.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Certifications}
+\textbf{Certified Information Systems Security Professional (CISSP)} \hfill Expires Oct 2028\\
+\textbf{FinOps Certified Engineer} \hfill Expires Nov 2027\\
+\textbf{Linux Foundation Certified System Administrator (LFCS)} \hfill Expires Jul 2026\\
+\textbf{Certified Kubernetes Administrator (CKA)} \hfill Expires Aug 2026\\
+\textbf{AWS Certified Solutions Architect -- Associate} \hfill Expired Dec 2024
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Extra-Curricular Activities} 
+% \begin{itemize}
+%     \item 	Actively write \href{https://www.faangpath.com/blog/}{blog posts} and social media posts (\href{https://www.tiktok.com/@faangpath}{TikTok}, \href{https://www.instagram.com/faangpath/?hl=en}{Instagram}) viewed by over 20K+ job seekers per week to help people with best practices to land their dream jobs. 
+%     \item	Sample bullet point.
+% \end{itemize}
+
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Projects} 
+% \textbf{InfraSage RAG} \hfill Python, OpenAI API, Chroma, Streamlit
+% \begin{itemize}
+%     \item Built a RAG-based technical knowledge assistant that ingests runbooks, PDFs, and infrastructure documents to answer questions using retrieved context.
+% \end{itemize}
+
+% \textbf{RepoPilot Agent} \hfill Python, OpenAI API, Tool Calling, GitHub API
+% \begin{itemize}
+%     \item Developed an AI agent that analyzes GitHub repositories, identifies project dependencies, and generates setup, build, and debugging instructions.
+% \end{itemize}
+
+% \textbf{PyPackageOracle} \hfill Python, Streamlit, SerpApi, GPT-4o
+% \begin{itemize}
+%     \item Built an AI-powered Python package recommendation engine that searches developer sources and ranks libraries with pros, cons, alternatives, and evidence-backed verdicts.
+% \end{itemize}
+% % \begin{itemize}
+% %     \item Admin for the \href{https://discord.com/invite/WWbjEaZ}{FAANGPath Discord community} with over 6000+ job seekers and industry mentors. Actively involved in facilitating online events, career conversations, and more alongside other admins and a team of volunteer moderators! 
+% % \end{itemize}
+
+
+% \end{rSection}
+
+
+\end{document}
